@@ -1,0 +1,138 @@
+.card-img-overlay {
+    top:unset;
+    background-color: #0000008c;
+}
+.titre{
+    text-align: center;
+    background-color:  #232121d4; 
+    min-height: 80px;
+    color: #fff;
+    padding-top: 15px;
+
+}
+
+.navbar2{
+    border:none ;
+    box-shadow: 0 0 12px rgba(0,0,0,.25);
+    color:rgba(223, 22, 132, 0.959) !; 
+    background-color: #232121;
+}
+
+  a{
+    color:  rgba(223, 22, 132, 0.959);
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  .alert{
+      margin-top:20px;
+      padding: 0px;
+    border: 0px;
+    }
+
+    .alertInfo{
+        background-color: #c528288c;
+        color: white;
+    }
+
+    .customcard img{
+        height: 15vw;
+        object-fit: cover;
+      }
+
+/*footer*/
+
+.bg-primary {
+    background-color: #232121d4!important;
+   }
+   
+   .bg-circle
+   {
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+     padding: 14px 4px;
+     color: #ececec;
+     text-align: center;
+     border-radius: 50%;
+   }
+   
+   .bg-circle-outline
+   {
+     width: 50px;
+     height: 50px;
+     color:smoke;
+     padding: 8px 2px;
+     border: 2px solid;
+     border-color: smoke;
+     border-radius: 50%;
+   }
+   
+   
+   .bg-circle a, a:hover, .media a:focus
+   {
+     text-decoration: none !important;
+     outline: none;
+     color: #ececec;
+   }
+   .bg-circle-outline a, a:hover, .media a:focus
+   {
+     text-decoration: none !important;
+     outline: none;
+     color: #ececec;
+   }
+   
+   /*navbar*/
+   .nav-link.active {
+    background-color: rgba(223, 22, 132, 0.959);
+    color: white !important;
+}
+
+.navbar a {
+    float: left;
+    color: rgba(223, 22, 132, 0.959);
+    background-color: #232121d4;
+}
+   
+.navbar a:hover {
+    background-color: #ddd;
+    color:  #000
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar{
+    background-color: #ffffffd6;
+ 
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(247 245 245 / 97%);
+}
+a.navbar-brand{
+    background-color:rgba(223, 22, 132, 0.959); ;
+}
+.titre2{
+    text-align: center;
+    background-color:  #232121d4; 
+    min-height: 80px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+
+
+
+

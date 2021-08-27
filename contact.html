@@ -54,7 +54,30 @@
                     et vous fournit la liste des produits adaptés à votre budget</h3>
             </div>
 
+        <!--FORMULAIRE-->
 
+      
+
+        <form action="/action_page.php" autocomplete="on">
+          <label for="fname">prenom:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">nom:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"><br><br>
+          <input type="submit">
+        </form>
+
+       
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="comment">veuillez décrire en commentaire vos besoins:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">envoyer</button>
+  </form>
+
+        
         
     </div><!--FINC BLOC PRINCIPAL-->
     <footer class="mt-5">

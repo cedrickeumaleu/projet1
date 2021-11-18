@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Vollkorn:ital,wght@0,900;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Hello, world!</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLEV5FG6P9"></script>
@@ -22,7 +26,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand navbar-light">
             <a class="navbar-brand" href="#"><img src="css/img/logo_blanc.png" class="rounded-circle" alt="Cinque Terre" width="100" height="60"></a>
             <h2 class="logo">MASTER PRO DECOR</h2>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,26 +36,29 @@
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Acceuil</a>
                 <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="conseil.html">Conseils</a>
+                <a class="nav-item nav-link" href="Model.html">Model</a>
+              
               </div>
             </div>
           </nav>
       </header>
-    <div class="container-fluid"><!--DEBUT BLOC PRINCIPAL-->
-
+    <div class="container"><!--DEBUT BLOC PRINCIPAL-->
+      <div class="content">
         <div class="card bg-dark text-white">
-            <img class="card-img" src="css/img/img1.jpg" alt="Card image">
+            <img class="card-img" src="css/img/entré.jpg" alt="Card image">
             <div class="card-img-overlay">
               <h3 class="card-title">MASTER PRO DECOR</h3>
               <p class="card-text">écoute, conseil, accompagne et réalise vos projets de décoration.</p>
-              <p class="card-text">votre satisfaction est notre priorité</p>
+              <p class="card-text2">votre satisfaction est notre priorité</p>
             </div>
           </div>
-
+        </div>
 
             <div class="alert alert-dark" role="alert">
+              <a href="contact.html" title="consultez nous" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">
                 <h3 class="titre">Un decorateur imagine et conçoit votre intérieur en 3D
                     et vous fournit la liste des produits adaptés à votre budget</h3>
+                    </a>
             </div>
 
 
@@ -114,9 +121,9 @@
                   <div class="card customcard" style="width: auto;">
                     <img class="card-img-top" src="css/img/ch1_3d.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">chambre bleu nuit</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">chambre </h5>
+                      <p class="card-text">consultez nos differentes offres et promo.</p>
+                      <a href="#" class="btn btn-primary">consultez</a>
                     </div>
                   </div>
                 </div>
@@ -125,8 +132,8 @@
                     <img class="card-img-top" src="css/img/cuisine1.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">cuisine moderne</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">consultez nos differentes offres et promo.</p>
+                      <a href="#" class="btn btn-primary">consultez</a>
                     </div>
                   </div>
                 </div>
@@ -135,8 +142,8 @@
                     <img class="card-img-top" src="css/img/douche1.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">wc et salle d'eau</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">consultez nos differentes offres et promo.</p>
+                      <a href="#" class="btn btn-primary">consultez</a>
                     </div>
                   </div>
                 </div>
@@ -145,15 +152,73 @@
                     <img class="card-img-top" src="css/img/ch3_3d.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">consultez nos differentes offres et promo.</p>
+                      <a href="#" class="btn btn-primary">consultez</a>
                     </div>
                   </div>
                 </div>
               </div> 
-        
-    </div><!--FINC BLOC PRINCIPAL-->
+
+
+              <form method="POST"  action="action_page.php" autocomplete="on">
+                <div class="row-form">
+                <div class="col12 col-md-12-tete">
+                <h2> contactez nous</h2>
+                </div>
+                </div>
+               <div class="row">
+                 <div class="col12 col-md-6">
+                <div class="row">
+                <div class="col12 col-md-6">
+                <label for="fname">prenom:</label><br>
+                <input class="form-control" type="text" id="prenom" name="prenom" value=""><br>
+              </div>
+              <div class="col12 col-md-6">
+                <label for="lname">nom:</label><br>
+                <input class="form-control" type="text" id="nom" name="nom" value=""><br>
+              </div>
+            
+            
+          </div>
+                <div class="row">
+                  <div class="col12 col-md-6">
+                <label for="phone">tél:</label><br>
+                <input class="form-control" type="text"id="tel" name="tel" value=""><br>
+                  </div>
+              <div class="col12 col-md-6">
+                <label for="email">Email:</label><br>
+                <input class="form-control" type="text" id="email" name="email"><br><br>
+              </div>
+      
+              <div class="col12 col-md-12">
+                <label for="object">objet:</label><br>
+                <input class="form-control" type="text" id="objet" name="objet"><br><br>
+              </div>
+      
+              </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col12 col-md-12">
+                      <label for="comment">veuillez décrire vos besoins:</label>
+                    <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">envoyer</button>
+                </div>
+               
+                  </div>
+                  <div class="col12 col-md-12-map"><h1>localisation</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.126558136535!2d4.89600920243011!3d45.76160217965623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ed1de7cdcc6dbb!2smasterpro%20makup!5e0!3m2!1sfr!2sfr!4v1630916757554!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                  
+                </div>
+              
+              </form>
+   
+    </div>
+    <!--FINC BLOC PRINCIPAL-->
     <footer class="mt-5">
+
       <div class="container-fluid bg-faded mt-5">
         <div class="container">
           <div class="row py-3">
@@ -168,7 +233,7 @@
                 </div>
                 <div class="col-sm-9">
                   <h4>Tweets</h4>
-                  Embed here?
+                  cedrick lahkam
                 </div>
               </div>
               <!-- row end -->
@@ -179,13 +244,13 @@
               <!-- row start -->
               <div class="row py-2">
                 <div class="col-sm-3 hidden-md-down">
-                  <a class="bg-circle bg-info" href="#">
+                  <a class="bg-circle bg-info" href="confirmation.html">
                     <i class="fa fa-2x fa-fw fa-address-card" aria-hidden="true "></i>
                   </a>
                 </div>
                 <div class="col-sm-9">
-                  <h4>Contact us</h4>
-                  <p>Why not?</p>
+                  <h4>confirmation </h4>
+                  <p>cedric@masterpromakup.org<br>0755612575</p>
                 </div>
               </div>
               <!-- row end -->
@@ -223,7 +288,7 @@
               <!-- row starting  -->
               <div class="row py-2">
                 <div class="col-sm-3 hidden-md-down">
-                  <a class="bg-circle bg-info" href="https://twitter.com/ ">
+                  <a class="bg-circle bg-info" href="https://twitter.com/cedrick.lahkam ">
                     <i class="fa fa-2x fa-fw fa-info" aria-hidden="true "></i>
                   </a>
                 </div>
@@ -244,17 +309,17 @@
         <div class="container">
           <div class="row py-3">
             <div class="col-md-9">
-              <p class="text-white">Lorem ipsum.</p>
+              <p class="text-white">rétrouvez nous également sur :</p>
             </div>
             <div class="col-md-3">
               <div class="d-inline-block">
                 <div class="bg-circle-outline d-inline-block">
-                  <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-2x fa-fw fa-facebook"></i>
+                  <a href="https://www.facebook.com/cedrick.lahkam" class="text-white"><i class="fa fa-2x fa-fw fa-facebook"></i>
             </a>
                 </div>
     
                 <div class="bg-circle-outline d-inline-block">
-                  <a href="https://twitter.com/" class="text-white">
+                  <a href="https://twitter.com/cedrick.lahkam" class="text-white">
                     <i class="fa fa-2x fa-fw fa-twitter"></i></a>
                 </div>
     

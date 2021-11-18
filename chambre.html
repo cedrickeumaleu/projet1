@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Vollkorn:ital,wght@0,900;1,400;1,900&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLEV5FG6P9"></script>
@@ -39,15 +40,11 @@
       </header>
     <div class="container-fluid"><!--DEBUT BLOC PRINCIPAL-->
 
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="css/img/img1.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title">MASTER PRO DECOR</h3>
-              <p class="card-text">écoute, conseil, accompagne et réalise vos projets de décoration.</p>
-              <p class="card-text">votre satisfaction est notre priorité</p>
-            </div>
-          </div>
-
+  
+      <div class="alert alert-dark" role="alert">
+        <h3 class="titre">
+            </h3>
+    </div>
 
             <div class="alert alert-dark" role="alert">
                 <h3 class="titre">Un decorateur imagine et conçoit votre intérieur en 3D
@@ -133,15 +130,15 @@
                   </a>
                 </div>
                 <div class="col-sm-9">
-                  <h4>Contact us</h4>
-                  <p>Why not?</p>
+                  <h4>Contact </h4>
+                  <p>cedric@masterpromakup.org<br>0755612575</p>
                 </div>
               </div>
               <!-- row end -->
               <!-- row start -->
               <div class="row py-2">
                 <div class="col-sm-3 hidden-md-down">
-                  <a class="bg-circle bg-info" href="#">
+                  <a class="bg-circle bg-info" href="contact.html">
                     <i class="fa fa-2x fa-fw fa-laptop" aria-hidden="true "></i>
                   </a>
                 </div>
@@ -223,6 +220,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
-  
+  <script>
+    function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+} 
+  </script>
 </body>
 </html>

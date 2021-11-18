@@ -4,10 +4,11 @@
 }
 .titre{
     text-align: center;
-    background-color:  #232121d4; 
+    background-color:rgba(223, 22, 132, 0.959); 
     min-height: 80px;
-    color: #fff;
-    padding-top: 15px;
+    color: #000;
+   padding-top: 20px;
+    font-family: 'Lobster', cursive;
 
 }
 
@@ -119,16 +120,21 @@ a{
 
 .navbar-light .navbar-nav .nav-link{
     color: rgb(247 245 245 / 97%);
+ 
 }
 a.navbar-brand{
-    background-color:rgba(223, 22, 132, 0.959); ;
+    background-color:rgba(223, 22, 132, 0.959); 
 }
+
+
+
 .titre2{
     text-align: center;
-    background-color:  #232121d4; 
+    background-color:rgba(223, 22, 132, 0.959);   
     min-height: 80px;
-    color: #fff;
-    padding-top: 20px;
+    color: #000;
+  padding-top: 20px;
+    font-family: 'Lobster', cursive;
 }
 
 input[type="submit" i]{
@@ -163,7 +169,7 @@ input[type="submit" i]{
   /* The expanding image container */
   .container {
     position: relative;
-    display: none;
+    /* display: none; */
   }
   
   /* Expanding image text */
@@ -186,6 +192,139 @@ input[type="submit" i]{
   }
 
 
+#div1{
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.253) ;
+    height: 250px;
+    margin-top: 40px;
+ }
+ form{
+    border-radius: 8px;
+     margin-top: 40px;
+     background-image: url('img/plage.jpg');
+    
+   
+}
+.img-formul{
+    
+    background-color: rgb(212, 199, 212);
+ 
+    
+}
+    
+.row{
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0px;
+
+}
+
+.col-md-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    min-width: 50%;
+    background-color:rgba(85, 85, 85, 0.603);
+    color:#fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    
+   }
+
+   .col-sm-6-merci{
+     margin-top: 400px;
+   }
+.btn-primary {
+    color: #fff;
+    background-color: rgba(223, 22, 132, 0.959); 
+    border-color:#fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+  }
+}
+.col-md-9-tete{
+    background-color: tomato;
+}
+.card-text2{
+    font-family:  'Lobster Two', cursive;
+    font-size: 18px;
+}
+h2{
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    color: #000;
+    text-shadow: black 1px 1px;
+}
+
+.tete-contact{
+  color: #000;
+  margin-top: 20px;
+}
+
+.card-img-overla{
+  text-align: center;
+}
+.col12.col-md-12-tete{
+  color: #fff;
+  
+}
+.rounded-circle{
+ margin-top: 30px;
+}
+h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #000;
+  text-align: center;
+}
+.col-md-4.logo{
+  background-color: rgba(245, 245, 220, 0.705);
+  text-align: center;
+ 
+}
+p{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+
+.col-md-12-map{
+  width: 100%;
+  background-color:#fff;
+  text-align: center;
+  
+}
+
+/*scrfoll down confimation*/
+
+.top-container {
+  background-image: url('img/soleil.jpg');
+  padding: 30px;
+  text-align: center;
+}
 
 
+.header {
+  padding: 10px 16px;
+  background: rgba(223, 22, 132, 0.959); 
+  color: #000;
+  z-index: 500;
+  height: 108px;
+}
 
+.content {
+  padding: 16px;
+  margin-top: 100px;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

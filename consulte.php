@@ -1,81 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Vollkorn:ital,wght@0,900;1,400;1,900&display=swap" rel="stylesheet">
-    <title>Hello, world!</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLEV5FG6P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NLEV5FG6P9');
-</script>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="css/img/logo_blanc.png" class="rounded-circle" alt="Cinque Terre" width="100" height="60"></a>
-            <h2 class="logo">MASTER PRO DECOR</h2>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link " href="accueil.html">Acceuil</a>
-                <a class="nav-item nav-link active" href="#contact">Contact</a>
-                <a class="nav-item nav-link" href="conseil.html">Conseils</a>
-              </div>
-            </div>
-          </nav>
-      </header>
-    <div class="container-fluid"><!--DEBUT BLOC PRINCIPAL-->
-
-        <div class="card bg-dark text-white">
-            <img class="card-img" src="css/img/img1.jpg" alt="Card image">
-            <div class="card-img-overlay">
-              <h3 class="card-title">MASTER PRO DECOR</h3>
-              <p class="card-text">écoute, conseil, accompagne et réalise vos projets de décoration.</p>
-              <p class="card-text">votre satisfaction est notre priorité</p>
-            </div>
-          </div>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-            <div class="alert alert-dark" role="alert">
-                <h3 class="titre">Un decorateur imagine et conçoit votre intérieur en 3D
-                    et vous fournit la liste des produits adaptés à votre budget</h3>
-            </div>
-
-            <div class="navbar2">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link chambre" aria-current="page" href="chambre.html">chambre |</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link séjour" href="séjour.html">séjour |</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link cuisine" href="cuisine.html">cuisine |</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link douche" href="douche.html">douche</a>
-                </li>
-              </ul>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.js"></script>
+    <title>Hello,world</title>
 
 
+</head>
+<body>
+    
+      <div>
+            <table id="table_id" class ="display">
+                <thead>
+                <tr>
+                    <th>Prenom</th>
+                    <th>Nom</th>
+                    <th>Téléphone</th>
+                    <th>E-mail</th>
+                    <th>Objet</th>
+                    <th>Message</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+        include('connection.php');
+
+        $query = "SELECT * FROM contact";
+        $result = mysqli_query($connection, $query);
+
+        while($ligne=mysqli_fetch_array($result)){
+            echo'
+                <tr>
+                   <td>'.$ligne['prenom'].'</td>
+                   <td>'.$ligne['nom'].'</td>
+                   <td>'.$ligne['tél'].'</td>
+                   <td>'.$ligne['email'].'</td>
+                   <td>'.$ligne['objet'].'</td>
+                   <td>'.$ligne['message'].'</td>
+                </tr>
+            
+            ';
+        }
+        ?>
+
+                </tbody>
+            </table>
+        </div>
         
-    </div><!--FINC BLOC PRINCIPAL-->
-    <footer class="mt-5">
+       </div>   
+    
+       <footer class="mt-5">
         <div class="container-fluid bg-faded mt-5">
           <div class="container">
             <div class="row py-3">
@@ -101,12 +88,12 @@
                 <!-- row start -->
                 <div class="row py-2">
                   <div class="col-sm-3 hidden-md-down">
-                    <a class="bg-circle bg-info" href="contact.html">
+                    <a class="bg-circle bg-info" href="consultation.html">
                       <i class="fa fa-2x fa-fw fa-address-card" aria-hidden="true "></i>
                     </a>
                   </div>
                   <div class="col-sm-9">
-                    <h4>Contact </h4>
+                    <h4>Confirmation</h4>
                     <p>cedric@masterpromakup.org<br>0755612575</p>
                   </div>
                 </div>
@@ -166,17 +153,17 @@
           <div class="container">
             <div class="row py-3">
               <div class="col-md-9">
-                <p class="text-white">Lorem ipsum.</p>
+                <p class="text-white">suivez nous également sur :</p>
               </div>
               <div class="col-md-3">
                 <div class="d-inline-block">
                   <div class="bg-circle-outline d-inline-block">
-                    <a href="https://www.facebook.com/" class="text-white"><i class="fa fa-2x fa-fw fa-facebook"></i>
+                    <a href="https://www.facebook.com/cedrick.lahkam" class="text-white"><i class="fa fa-2x fa-fw fa-facebook"></i>
               </a>
                   </div>
       
                   <div class="bg-circle-outline d-inline-block">
-                    <a href="https://twitter.com/" class="text-white">
+                    <a href="https://twitter.com/cedrick.lahkam" class="text-white">
                       <i class="fa fa-2x fa-fw fa-twitter"></i></a>
                   </div>
       
@@ -190,12 +177,11 @@
           </div>
         </div>
       </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
-  
+
+
+      <script>$(document).ready( function () {$('#table_id').DataTable();} );
+</script>
+
+
 </body>
 </html>
